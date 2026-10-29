@@ -1,4 +1,17 @@
-﻿# Tadami extensions
+# Personal repository status
+
+This repository contains **extension source code**. It is not yet a ready-to-add Tadami extension store.
+
+- The release workflow publishes signed APKs and store metadata to `vaibhavaseri90-hue/tadami-extensions` by default.
+- That distribution repository has not been created yet. Before releases can be published, it must exist and the required GitHub Actions signing secrets and write token must be configured.
+- The source repository ID is already set to `vaibhavaseri90-hue/universal-media-extensions` in `gradle.properties`. Do not change it after extensions are released.
+- The current source folders target anime/video sites. MangaDex is a manga-reading source and will not appear just by adding this source repository; it would need an extension compatible with the app's actual API.
+
+The template marker was removed without running the template cleanup script, because that script deletes the current `extensions/` tree and replaces it with a single example. Existing extension source folders have been preserved.
+
+---
+
+# Tadami extensions
 
 The source code of the extensions of [Tadami](https://github.com/tadamiorg/tadami). Their APKs are published
 in [tadami-extensions](https://github.com/tadamiorg/tadami-extensions), where the app downloads them.
